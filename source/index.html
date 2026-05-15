@@ -8,10 +8,77 @@
 	<meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
-
-	
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <img class="header__logo" src="img/logo.svg" alt="Логотип">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">О бренде</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Новинки</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__link-phone" href="tel:88005504996">8 800 550 49 96</a>
+        <a class="header__btn-parthner" href="#modal-parthner">Стать партнером</a>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <picture>
+        <source srcset="img/hero-photo-1024.png" media="(max-width: 1024px)">
+        <img class="header__hero-photo" src="img/hero-photo.png" fetchpriority="high">
+      </picture>
+      <div class="container">
+        <div class="header__offer">
+          <h1 class>Современный взгляд на уборку</h1>
+          <div class="header__offer-descr">JOY HOME - широкий выбор средств для уборки и стирки, которые реально работают, удобны и понятны в использовании, дарят ощущение свежести и уюта каждый день, для каждого дома, по цене, доступной каждому</div>
+          <a class="header__offer-btn" href="#catalog">Каталог</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="features">
+      <div class="container">
+        <h2 class="features__head">Почему мы?</h2>
+        <div class="features__list">
+          <div class="features__item">
+            <img class="features__icon" src="img/features/icon-1.svg" alt="">
+            <h3 class="features__title">Эффективность</h3>
+            <div class="features__descr">Благодаря современным формулам бытовая химия JOY HOME справляется даже со сложными задачами</div>
+          </div>
+          <div class="features__item">
+            <img class="features__icon" src="img/features/icon-2.svg" alt="">
+            <h3 class="features__title">Выгодные цены</h3>
+            <div class="features__descr">Предлагаем честную стоимость, без переплат и скрытых наценок</div>
+          </div>
+          <div class="features__item">
+            <img class="features__icon" src="img/features/icon-3.svg" alt="">
+            <h3 class="features__title">Удобство</h3>
+            <div class="features__descr">Мы создаём продукты, которые легко и приятно использовать каждый день</div>
+          </div>
+          <div class="features__item">
+            <img class="features__icon" src="img/features/icon-4.svg" alt="">
+            <h3 class="features__title">Качество</h3>
+            <div class="features__descr">Придерживаемся высоких стандартов и контроля качества на каждом этапе производства</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="catalog">
+      <div class="container"></div>
+    </div>
+  </main>
   <link rel="preload" as="style" href="scripts/slick/slick.min.css" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" as="style" href="scripts/slick/slick-theme.css" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" as="style" href="scripts/fancybox/jquery.fancybox.min.css" onload="this.onload=null;this.rel='stylesheet'">
@@ -20,7 +87,6 @@
 	<script src="scripts/slick/slick.min.js"></script>
 	<script src="scripts/fancybox/jquery.fancybox.min.js"></script>
 	<script src="scripts/script.min.js"></script>
-
 </body>
 
 </html>
