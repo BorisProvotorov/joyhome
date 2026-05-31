@@ -262,4 +262,14 @@
       margin-left: -240px;
     }
   }
+
+  @media  screen and (max-width: $mobile-very-small) {
+    &__link-phone {
+      display: none;
+    }
+
+    &__offer-btn {
+      max-width: 125px;
+    }
+  }
 }

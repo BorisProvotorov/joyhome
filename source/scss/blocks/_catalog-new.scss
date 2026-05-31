@@ -60,4 +60,10 @@
       margin-top: 40px;
     }
   }
+
+  @media  screen and (max-width: $mobile-very-small) {
+    &__container {
+      padding-right: 20px;
+    }
+  }
 } 

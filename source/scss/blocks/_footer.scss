@@ -169,4 +169,54 @@
       margin-bottom: 16px;
     }
   }
+
+  @media  screen and (max-width: $mobile-very-small) {
+
+    &__address {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      margin-left: 0;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    &__address-place {
+      margin-bottom: 10px;
+    }
+
+    &__menu {
+      grid-row: 1 span;
+    }
+
+    &__brands {
+      grid-row: 1/2;
+      text-align: left;
+    }
+
+    &__brands img:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &__contacts {
+      flex-direction: column;
+      align-items: start;
+      grid-column: 1/3;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+
+    &__phone {
+      margin-bottom: 10px;
+    }
+
+    &__link-parthner {
+      padding: 7px 10px;
+      max-width: 160px;
+    }
+
+    &__bottom {
+      grid-row: 4/5;
+      margin-top: 10px;
+    }
+  }
 }

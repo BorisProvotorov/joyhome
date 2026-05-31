@@ -7,6 +7,7 @@ $(document).ready(function() {
     burger.addEventListener('click', (evt) => {
       evt.target.classList.toggle('active');
       menuMobile.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
     })
   }
 

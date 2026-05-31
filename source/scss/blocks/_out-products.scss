@@ -72,4 +72,14 @@
       padding: 12px 15px 12px 15px;
     }
   }
+
+  @media  screen and (max-width: $mobile-very-small) {
+    &__list {
+      padding: 0; 
+    }
+
+    &__item {
+      height: 145px;
+    }
+  }
 }
