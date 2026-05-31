@@ -1,0 +1,168 @@
+@use "variables" as *;
+
+.feedback-form {
+
+  &__field input[type='text'],
+  &__field textarea {
+    background-color: rgba(255, 255, 255, 0.87);
+  }
+
+  &__field textarea {
+    min-height: 67px;
+  }
+
+  &__field:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__submit {
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    background-color: transparent;
+    padding: 12px 32px;
+  }
+
+  /* Для современных браузеров */
+  &__field input[type='text']::placeholder,
+  &__field textarea::placeholder {
+    color: #babec2;
+  }
+
+  /* Chrome, Safari, Opera */
+  &__field input[type='text']::-webkit-input-placeholder,
+  &__field textarea::-webkit-input-placeholder {
+    color: #babec2;
+  }
+
+  /* Firefox 19+ */
+  &__field input[type='text']::-moz-placeholder,
+  &__field textarea::-moz-placeholder {
+    color: #babec2;
+    opacity: 1; /* предотвращает снижение прозрачности в некоторых версиях Firefox */
+  }
+
+  /* Internet Explorer 10+ и Edge */
+  &__field.field-is-error input[type='text']:-ms-input-placeholder,
+  &__field.field-is-error textarea:-ms-input-placeholder {
+    color: #babec2;
+  }
+
+  /*Ошибки валидации*/
+  
+  /* Для современных браузеров */
+  &__field.field-is-error input[type='text']::placeholder,
+  &__field.field-is-error textarea::placeholder {
+    color: #ca0000;
+  }
+
+  /* Chrome, Safari, Opera */
+  &__field.field-is-error input[type='text']::-webkit-input-placeholder,
+  &__field.field-is-error textarea::-webkit-input-placeholder {
+    color: #ca0000;
+  }
+
+  /* Firefox 19+ */
+  &__field.field-is-error input[type='text']::-moz-placeholder,
+  &__field.field-is-error textarea::-moz-placeholder {
+    color: #ca0000;
+  }
+
+  /* Internet Explorer 10+ и Edge */
+  &__field.field-is-error input[type='text']:-ms-input-placeholder,
+  &__field.field-is-error textarea:-ms-input-placeholder {
+    color: #ca0000;
+  }
+
+  &__checkbox {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    cursor: pointer;
+    position: relative;
+    margin-left: auto;
+    margin-right: 5px;
+    justify-content: end;
+    margin-top: 10px;
+  }
+
+  &__checkbox input[type=checkbox] {
+    width: 0;
+    height: 0;
+    z-index: 100;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    opacity: 0;
+  }
+
+  &__checkbox-custom {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ffffff;
+    flex-shrink: 0;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-top: 1px;
+  }
+
+  &__checkbox-custom-text {
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 5px;
+    color: #ffffff;
+  }
+
+  &__checkbox-custom-text a {
+    color: #ffffff;
+  }
+
+  &__checkbox input:not(:disabled):checked + &__checkbox-custom {
+    background-image: url("../img/checkbox-checked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    &__field input[type='text'] {
+      height: 40px;
+    }
+
+    &__submit {
+      line-height: 20px;
+      padding: 9px 32px;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+
+    &__field input[type='text'] {
+      height: 30px;
+      font-size: 12px;
+      padding: 10px 16px 10px 16px;
+    }
+
+    &__field textarea {
+      border-radius: 20px;
+      padding: 10px 16px 10px 16px;
+    }
+
+    &__checkbox input[type=checkbox] {
+      margin-top: 0;
+      margin-right: 9px;
+    }
+
+    &__submit {
+      font-size: 12px;
+      margin-top: 16px;
+      padding: 4px 32px;
+    }
+  }
+}

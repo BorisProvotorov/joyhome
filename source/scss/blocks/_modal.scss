@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+.modal {
+  display: none;
+}
+
+.modal.fancybox-content {
+  width: 100%;
+  max-width: 954px;
+  padding: 32px 36px;
+  border-radius: 25px;
+}
+
+.modal--product.fancybox-content {
+  padding: 32px 40px 50px 40px;
+}
+
+.fancybox-slide--html .modal .fancybox-close-small {
+  right: 20px;
+  top: 20px;
+}
+
+.modal .fancybox-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.modal .fancybox-button svg path {
+  fill: rgba(0, 38, 58, 1);
+}
+
+@media screen and (max-width: $mobile-width) {
+  .fancybox-container .fancybox-slide--html {
+    padding: 0;
+  }
+
+  .modal.fancybox-content {
+    border-radius: 0;
+  }
+
+  .fancybox-slide--html .modal.modal--form-parthner .fancybox-close-small,
+  .fancybox-slide--html .modal.modal--product-new .fancybox-close-small {
+    right: 40px;
+    top: 13px;
+  }
+
+  .fancybox-slide--html .modal .fancybox-close-small {
+    right: 12px;
+    top: 12px;
+  }
+
+  .modal.modal--form-parthner.fancybox-content {
+    padding: 18px 60px 20px 60px;
+  }
+
+  .modal.modal--product-new.fancybox-content {
+    padding: 25px 60px 40px 60px;
+  }
+  
+}

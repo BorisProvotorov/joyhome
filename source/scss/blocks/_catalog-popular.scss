@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+.catalog-popular {
+  padding-bottom: 70px;
+
+  &__head {
+    color: rgba(1, 37, 71, 1);
+  }
+
+  @media  screen and (max-width: $tablet-width) {
+    &__container {
+      padding-right: 0;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+    & {
+      padding-bottom: 30px;
+    }
+
+    &__container {
+      padding-left: 0;
+    }
+
+    &__head {
+      margin: 27px auto;
+      text-align: center;
+      max-width: 150px;
+      line-height: 24px;
+    }
+  }
+}

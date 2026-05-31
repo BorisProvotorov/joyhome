@@ -1,0 +1,64 @@
+@use "variables" as *;
+
+.product-popular {
+  max-width: 378px;
+  min-height: 456px;
+  background-color: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 30px 0 0 0;
+
+  &__img {
+    height: 276px;
+    margin-bottom: 10px;
+  }
+
+  &__img img {
+    display: block;
+    margin: 0 auto;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    max-width: 208px;
+    margin: 0 auto 20px;
+  }
+
+  &__button-more {
+    margin: 0 auto;
+  }
+
+  @media  screen and (max-width: $tablet-width) {
+
+    & {
+      min-height: 360px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding: 20px 24px 20px 24px;
+    }
+
+    &__img {
+      height: 217px;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__button-more {
+      max-width: 250px;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+    & {
+      min-width: 282px;
+    }
+  }
+}

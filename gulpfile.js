@@ -23,6 +23,7 @@ const paths = {
   src: {
     scss: 'source/scss/**/*.scss',
     js: 'source/scripts/**/*.js',
+    json: 'source/data/**/*.json',
     html: 'source/**/*.html',
     components: 'source/components/*.html',
     images: 'source/img/**/*.{jpg,jpeg,png,gif,svg,webp}',
@@ -32,6 +33,7 @@ const paths = {
   build: {
     css: 'build/css/',
     js: 'build/scripts/',
+    json: 'build/data/',
     html: 'build/',
     components: 'build/components/',
     images: 'build/img/',
@@ -41,6 +43,7 @@ const paths = {
   watch: {
     scss: 'source/scss/**/*.scss',
     js: 'source/scripts/**/*.js',
+    json: 'source/data/**/*.json',
     html: 'source/**/*.html',
     components: 'source/components/*.html',
     images: 'source/img/**/*.{jpg,jpeg,png,gif,svg,webp}',
@@ -89,8 +92,18 @@ const copyScripts = () => {
     encoding: false,
     nodir: true
   })
-  .pipe(gulp.dest(paths.build.js));
+  .pipe(gulp.dest(paths.build.js))
 };
+
+const copyJson = () => {
+  return gulp.src([
+    'source/data/**/*',
+  ], {
+    encoding: false,
+    nodir: true
+  })
+  .pipe(gulp.dest(paths.build.json));
+}
 
 // Обработка HTML с include
 const html = () => {
@@ -181,6 +194,7 @@ const serve = (done) => {
 const watch = () => {
   gulp.watch(paths.watch.scss, gulp.series(styles, reload));
   gulp.watch(paths.watch.js, gulp.series(scripts, copyScripts, reload));
+  gulp.watch(paths.watch.json, gulp.series(copyJson, reload));
   gulp.watch(paths.watch.html, gulp.series(html, reload));
   gulp.watch(paths.watch.images, gulp.series(isProduction ? optimizeImages : copyImages, reload));
   gulp.watch(paths.watch.fonts, gulp.series(copyFonts, reload));
@@ -199,9 +213,10 @@ const build = gulp.series(
   gulp.parallel(    // 3. Параллельно остальные задачи
     scripts,
     html,
-    // copyImages,
-    isProduction ? optimizeImages : copyImages,
+    copyImages,
+    // isProduction ? optimizeImages : copyImages,
     copyScripts,
+    copyJson,
     copyFonts
   )
 );
@@ -215,6 +230,7 @@ export default gulp.series(
     html,
     copyImages,
     copyScripts,
+    copyJson,
     copyFonts
   ),
   gulp.parallel(serve, watch)
@@ -232,5 +248,6 @@ export {
   watch,
   build,
   copyScripts,
+  copyJson,
   copyFonts
 };

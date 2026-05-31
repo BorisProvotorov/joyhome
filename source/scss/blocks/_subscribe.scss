@@ -1,0 +1,53 @@
+@use "variables" as *;
+
+.subscribe {
+  padding-bottom: 70px;
+
+  &__head {
+    color: rgba(1, 37, 71, 1);
+    margin-bottom: 16px;
+  }
+
+  &__descr {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    max-width: 780px;
+    margin-bottom: 25px;
+  }
+
+  @media  screen and (max-width: $tablet-min-width) {
+
+    & {
+      padding-bottom: 48px;
+    }
+
+    &__head {
+      margin-bottom: 4px;
+    }
+
+    &__descr {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+
+    & {
+      padding-bottom: 30px;
+    }
+
+    &__head {
+      line-height: 29px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__descr {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 0px;
+    }
+  }
+}

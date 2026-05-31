@@ -1,0 +1,131 @@
+@use "variables" as *;
+
+.contacts {
+
+  &__head {
+    color: rgba(1, 37, 71, 1);
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+  }
+
+  &__info {
+    position: absolute;
+    top: 286px;
+    width: 100%;
+    max-width: 479px;
+    min-height: 207px;
+    background-color: #fff;
+    border-radius: 25px;
+    z-index: 2;
+    padding: 25px 18px 30px 21px;
+  }
+
+  &__info-title {
+    color: rgba(0, 38, 58, 1);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    background-repeat: no-repeat;
+    padding-left: 28px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__item--phone {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &__item--phone a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+  }
+
+  &__item--email {
+    background-image: url("../img/icon-email.svg");
+    background-position: 0;
+  }
+
+  &__item--address {
+    background-image: url("../img/icon-marker.svg");
+  }
+
+  &__map {
+    min-height: 577px;
+    position: relative;
+  }
+
+  &__map::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.26);
+    pointer-events: none;
+  }
+
+  @media  screen and (max-width: $tablet-width) {
+
+    &__title {
+      max-width: 270px;
+    }
+
+    &__info {
+      top: 218px;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+
+    &__head {
+      display: none;
+    }
+
+    &__info {
+      position: static;
+      background-color: transparent;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 23px;
+      max-width: 100%;
+    }
+
+
+    &__info-title {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    &__item {
+      font-size: 14px;
+    }
+
+    &__map {
+      min-height: 141px;
+      position: relative;
+      margin: 0 60px;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 38, 58, 1);
+    }
+
+    &__map::after {
+      display: none;
+    }
+  }
+}

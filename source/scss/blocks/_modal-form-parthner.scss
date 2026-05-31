@@ -1,0 +1,142 @@
+@use "variables" as *;
+
+.modal-form-parthner {
+
+    &__title {
+      font-size: 32px;
+      line-height: 38px;
+      color: rgba(0, 38, 58, 1);
+      margin-bottom: 18px;
+    }
+
+    &__descr {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 25px;
+      color: rgba(43, 42, 41, 1);
+      margin-bottom: 25px;
+    }
+
+    &__policy,
+    &__policy a {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 15px;
+      color: rgba(0, 0, 0, 1);
+    }
+
+    &__field:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    /* Chrome, Safari, Opera */
+    &__field input[type='text']::-webkit-input-placeholder,
+    &__field textarea::-webkit-input-placeholder {
+      color: #babec2;
+    }
+  
+    /* Firefox 19+ */
+    &__field input[type='text']::-moz-placeholder,
+    &__field textarea::-moz-placeholder {
+      color: #babec2;
+      opacity: 1; /* предотвращает снижение прозрачности в некоторых версиях Firefox */
+    }
+  
+    /* Internet Explorer 10+ и Edge */
+    &__field.field-is-error input[type='text']:-ms-input-placeholder,
+    &__field.field-is-error textarea:-ms-input-placeholder {
+      color: #babec2;
+    }
+  
+    /*Ошибки валидации*/
+    
+    /* Для современных браузеров */
+    &__field.field-is-error input[type='text']::placeholder,
+    &__field.field-is-error textarea::placeholder {
+      color: #ca0000;
+    }
+  
+    /* Chrome, Safari, Opera */
+    &__field.field-is-error input[type='text']::-webkit-input-placeholder,
+    &__field.field-is-error textarea::-webkit-input-placeholder {
+      color: #ca0000;
+    }
+  
+    /* Firefox 19+ */
+    &__field.field-is-error input[type='text']::-moz-placeholder,
+    &__field.field-is-error textarea::-moz-placeholder {
+      color: #ca0000;
+    }
+  
+    /* Internet Explorer 10+ и Edge */
+    &__field.field-is-error input[type='text']:-ms-input-placeholder,
+    &__field.field-is-error textarea:-ms-input-placeholder {
+      color: #ca0000;
+    }
+
+    &__input {
+      border: 1px solid rgba(0, 38, 58, 1) !important;
+      border-radius: 39px;
+    }
+
+    &__field textarea {
+      border: 1px solid rgba(0, 38, 58, 1) !important;
+      min-height: 111px;
+    }
+
+    &__submit {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+
+    &__policy {
+      text-align: center;
+    }
+
+    @media  screen and (max-width: $tablet-width) {
+      &__title {
+        font-size: 24px;
+        margin-bottom: 14px;
+      }
+
+      &__field &__input {
+        height: 40px;
+        font-size: 12px;
+      }
+
+      &__field:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media  screen and (max-width: $mobile-width) {
+
+      &__title {
+        font-size: 16px;
+      }
+
+      &__descr {
+        display: none;
+      }
+
+      &__field:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      &__submit {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      &__field &__input {
+        height: 30px;
+        padding: 14px;
+      }
+
+      &__field textarea {
+        border-radius: 16px;
+      }
+    }
+}

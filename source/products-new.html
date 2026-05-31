@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Joy Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="img/hero-bg-mobile-inner.jpg" as="image">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <!-- Шапка BEGIN -->
+  <include src="components/header-inner.html"></include>
+  <!-- Шапка END -->
+  <main>
+    <div class="page-inner">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Главная</a></li>
+          <li>Новинки</li>
+        </ul>
+        <h1 class="page-inner__head">Новинки</h1>
+        <div class="page-inner__products-new-grid">
+          <div class="page-inner__products-new-list">
+            <a class="product-card-new" href="#modal-product-new" data-json-url="data/product-new-1.json">
+              <div class="product-card-new__img">
+                <picture>
+                  <source srcset="img/product-card-new/item-1-mobile.jpg" media="(max-width: 767px)">
+                  <img src="img/product-card-new/item-1.jpg" alt="Гели для стирки с пятновыводителем" fetchpriority="high">
+                </picture>
+              </div>
+              <div class="product-card-new__title">Гели для стирки с пятновыводителем</div>
+              <div class="product-card-new__descr">Выбор европейских хозяек!
+                Уникальный колпачок позволяет легко стирать пятна без вреда для ткани.
+                Подходит для любых видов ткани. </div>
+              <div class="product-card-new__date">01.09.2025</div>
+            </a>
+            <a class="product-card-new" href="#modal-product-new" data-json-url="data/product-new-2.json">
+              <div class="product-card-new__img">
+                <picture>
+                  <source srcset="img/product-card-new/item-1-mobile.jpg" media="(max-width: 767px)">
+                  <img src="img/product-card-new/item-1.jpg" alt="Гели для стирки с пятновыводителем" fetchpriority="high">
+                </picture>
+              </div>
+              <div class="product-card-new__title">Гели для стирки с пятновыводителем</div>
+              <div class="product-card-new__descr">Выбор европейских хозяек!
+                Уникальный колпачок позволяет легко стирать пятна без вреда для ткани.
+                Подходит для любых видов ткани. </div>
+                <div class="product-card-new__date">01.09.2025</div>
+            </a>
+            <a class="product-card-new" href="#modal-product-new" data-json-url="data/product-new-1.json">
+              <div class="product-card-new__img">
+                <picture>
+                  <source srcset="img/product-card-new/item-1-mobile.jpg" media="(max-width: 767px)">
+                  <img src="img/product-card-new/item-1.jpg" alt="Гели для стирки с пятновыводителем" fetchpriority="high">
+                </picture>
+              </div>
+              <div class="product-card-new__title">Гели для стирки с пятновыводителем</div>
+              <div class="product-card-new__descr">Выбор европейских хозяек!
+                Уникальный колпачок позволяет легко стирать пятна без вреда для ткани.
+                Подходит для любых видов ткани. </div>
+              <div class="product-card-new__date">01.09.2025</div>
+            </a>
+            <a class="product-card-new" href="#modal-product-new" data-json-url="data/product-new-2.json">
+              <div class="product-card-new__img">
+                <picture>
+                  <source srcset="img/product-card-new/item-1-mobile.jpg" media="(max-width: 767px)">
+                  <img src="img/product-card-new/item-1.jpg" alt="Гели для стирки с пятновыводителем" fetchpriority="high">
+                </picture>
+              </div>
+              <div class="product-card-new__title">Гели для стирки с пятновыводителем</div>
+              <div class="product-card-new__descr">Выбор европейских хозяек!
+                Уникальный колпачок позволяет легко стирать пятна без вреда для ткани.
+                Подходит для любых видов ткани. </div>
+                <div class="product-card-new__date">01.09.2025</div>
+            </a>
+            <a class="product-card-new" href="#modal-product-new" data-json-url="data/product-new-1.json">
+              <div class="product-card-new__img">
+                <picture>
+                  <source srcset="img/product-card-new/item-1-mobile.jpg" media="(max-width: 767px)">
+                  <img src="img/product-card-new/item-1.jpg" alt="Гели для стирки с пятновыводителем" fetchpriority="high">
+                </picture>
+              </div>
+              <div class="product-card-new__title">Гели для стирки с пятновыводителем</div>
+              <div class="product-card-new__descr">Выбор европейских хозяек!
+                Уникальный колпачок позволяет легко стирать пятна без вреда для ткани.
+                Подходит для любых видов ткани. </div>
+              <div class="product-card-new__date">01.09.2025</div>
+            </a>
+          </div>
+          <div class="page-inner__bottom">
+            <button class="button-load-more page-inner__button-load-more">Показать еще</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Форма обратной связи BEGIN -->
+    <include src="components/feedback.html"></include>
+    <!-- Форма обратной связи END -->
+
+    <!-- Контакты с yandex картой BEGIN -->
+    <include src="components/contacts.html"></include>
+    <!-- Контакты с yandex картой END -->
+
+    <!-- Подписка на рассылку BEGIN -->
+    <include src="components/subscribe.html"></include>
+    <!-- Подписка на рассылку END -->
+
+    <!-- Подвал BEGIN -->    
+    <include src="components/footer.html"></include>
+    <!-- Подвал END -->
+  </main>
+  <!-- Модальные окна BEGIN -->
+  <include src="components/modal.html"></include>
+   <!-- Модальные окна END -->
+  <link rel="preload" as="style" href="scripts/slick/slick.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="scripts/slick/slick-theme.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="scripts/fancybox/jquery.fancybox.min.css" onload="this.onload=null;this.rel='stylesheet'">
+
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <!-- <script src="scripts/slick/slick.min.js"></script> -->
+  <script src="scripts/fancybox/jquery.fancybox.min.js"></script>
+  <script src="scripts/yandex-map/yandex-map.js"></script>
+  <script src="scripts/form-validation/form-validation.js"></script>
+  <script src="scripts/script.min.js"></script>
+</body>
+</html>

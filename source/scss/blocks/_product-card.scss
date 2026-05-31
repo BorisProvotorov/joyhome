@@ -1,0 +1,78 @@
+@use "variables" as *;
+
+.product-card {
+  background-color: rgba(234, 234, 234, 1);
+  min-height: 404px;
+  border-radius: 15px;
+  padding: 30px;
+
+  &__img {
+    height: 234px;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+
+  &__img img {
+    display: block;
+    margin: 0 auto;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  &__button-more {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media  screen and (max-width: $tablet-width) {
+
+    & {
+      padding: 24px 24px 12px 24px;
+      min-height: 302px;
+    }
+
+    &__img {
+      height: 172px;
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 10px;
+    }
+
+    &__button-more {
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }  
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+    &__img {
+      height: 202px;
+      margin-bottom: 5px;
+    }
+
+    &__title {
+      max-width: 204px;
+      margin: 0 auto 10px auto;
+      text-align: center;
+    }
+
+    &__button-more {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      max-width: 230px;
+      margin: 0 auto;
+    }  
+  }
+}

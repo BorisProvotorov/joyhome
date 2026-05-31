@@ -1,0 +1,54 @@
+@use "variables" as *;
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+
+  & li {
+    position: relative;
+    display: inline;
+  }
+  
+  & li:not(:first-child) {
+    padding-left: 20px;
+  }
+  
+  & li:not(:first-child):before {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    content: "/";
+    display: inline-block;
+  }
+  
+  & li, & a {
+    color: rgba(0, 38, 58, 1);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    text-decoration: none;
+  }
+
+  @media  screen and (max-width: $tablet-width) {
+    & li, & a {
+      font-size: 16px;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+    & li, & a {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    & li:not(:first-child) {
+      padding-left: 10px;
+    }
+
+    & li:not(:first-child):before {
+      top: -2px;
+      left: 0px;
+    }
+  }
+  
+}

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Joy Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="img/hero-bg-mobile-inner.jpg" as="image">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <!-- Шапка BEGIN -->
+  <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <button class="burger"></button>
+      <a class="header__logo" href="/"><img src="img/logo.svg" alt="Логотип"></a>
+      <!-- Основное меню BEGIN -->
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="brands.html">О бренде</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="products-new.html">Новинки</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+       <!-- Основное меню END -->
+      <a class="header__link-phone" href="tel:88005504996">8 800 550 49 96</a>
+      <a class="header__btn-parthner" href="#modal-form-parthner" data-fancybox="">Стать партнером</a>
+    </div>
+  </div>
+  <!-- Мобильное меню BEGIN -->
+  <div class="menu-mobile">
+    <ul class="menu-mobile__list">
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="brands.html">О бренде</a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="catalog.html">Новинки</a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="products-new.html">Весь каталог</a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="catalog.html">Личная гигиена</a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="catalog.html">Для стирки</a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="catalog.html">Для мытья посуды</a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="catalog.html">Парфюмированная продукция</a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="catalog.html">Для уборки</a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="catalog.html">Для удаления засоров</a>
+      </li>
+      <li class="menu-mobile__item">
+        <a class="menu-mobile__link" href="catalog.html">Контакты</a>
+      </li>
+    </ul>
+    <div class="menu-mobile__address">
+      г. Кирово-Чепецк, ул. Прпоизводственная, 6
+      Режим работы: пн-пт с 8:00 до 17:00
+    </div>
+    <div class="menu-mobile__phone">
+      <a href="tel:88005504996">8 800 550 49 96</a>
+    </div>
+  </div>
+  <!-- Мобильное меню END -->
+  
+</header>
+  <!-- Шапка END -->
+  <main>
+    <div class="page-inner">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Главная</a></li>
+          <li>Каталог</li>
+        </ul>
+        <h1 class="page-inner__head">Каталог</h1>
+        <!-- Меню тегов BEGIN -->        
+        <ul class="menu-tags">
+          <li class="menu-tags__item">
+            <a class="menu-tags__link active" href="#">Все товары</a>
+          </li>
+          <li class="menu-tags__item">
+            <a class="menu-tags__link" href="#">Парфюмерно-косметическая продукция</a>
+          </li>
+          <li class="menu-tags__item">
+            <a class="menu-tags__link" href="#">Для мытья посуды</a>
+          </li>
+          <li class="menu-tags__item">
+            <a class="menu-tags__link" href="#">Для стирки</a>
+          </li>
+          <li class="menu-tags__item">
+            <a class="menu-tags__link" href="#">Чистящие средства для ванной комнаты</a>
+          </li>
+          <li class="menu-tags__item">
+            <a class="menu-tags__link" href="#">Чистящие средства для кухни</a>
+          </li>
+          <li class="menu-tags__item">
+            <a class="menu-tags__link" href="#">Чистящие средства для поверхностей</a>
+          </li>
+        </ul>
+         <!-- Меню тегов END -->
+         <div class="page-inner__grid">
+            <div class="page-inner__left">
+              <!-- Фильтр BEGIN -->
+              <div class="filter">
+  <div class="filter__title active">Фильтры</div>
+  <div class="filter__list active">
+    <div class="filter__type">
+      <div class="filter__name">Объем</div>
+      <label class="filter__checkbox">
+        <input type="checkbox" name="volume[]" value="550">
+        <div class="filter__checkbox-custom"></div>
+        <span>550 мл</span>
+      </label>
+      <label class="filter__checkbox">
+        <input type="checkbox" name="volume[]" value="750">
+        <div class="filter__checkbox-custom"></div>
+        <span>750 мл</span>
+      </label>
+      <label class="filter__checkbox">
+        <input type="checkbox" name="volume[]" value="1100">
+        <div class="filter__checkbox-custom"></div>
+        <span>1100 мл</span>
+      </label>
+      <label class="filter__checkbox">
+        <input type="checkbox" name="volume[]" value="3000">
+        <div class="filter__checkbox-custom"></div>
+        <span>3 л</span>
+      </label>
+      <label class="filter__checkbox">
+        <input type="checkbox" name="volume[]" value="5000">
+        <div class="filter__checkbox-custom"></div>
+        <span>5 л</span>
+      </label>
+    </div>
+    <div class="filter__type">
+      <div class="filter__name">Цена</div>
+      <div id="range-slider"></div>
+    </div>
+  </div>
+</div>
+              <!-- Фильтр END -->
+            </div>
+            <div class="page-inner__content">
+              <h2 class="page-inner__subhead">Все товары</h2>
+              <div class="page-inner__descr">
+                <p>Здесь будет описание данной категории.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
+                  dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
+                  nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, 
+                  sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, 
+                  vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+                  Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
+                   elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor </p>
+              </div>
+              <div class="page-inner__grid-products">
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <img src="img/products/item-1.png" alt="" loading="lazy">
+                  </div>
+                  <div class="product-card__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+                  <a class="product-card__button-more button" href="#modal-product-new" data-json-url="data/product-1.json">Узнать больше</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <img src="img/products/item-2.png" alt="" loading="lazy">
+                  </div>
+                  <div class="product-card__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+                  <a class="product-card__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <img src="img/products/item-3.png" alt="" loading="lazy">
+                  </div>
+                  <div class="product-card__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+                  <a class="product-card__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <img src="img/products/item-4.png" alt="" loading="lazy">
+                  </div>
+                  <div class="product-card__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+                  <a class="product-card__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <img src="img/products/item-5.png" alt="" loading="lazy">
+                  </div>
+                  <div class="product-card__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+                  <a class="product-card__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <img src="img/products/item-6.png" alt="" loading="lazy">
+                  </div>
+                  <div class="product-card__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+                  <a class="product-card__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <img src="img/products/item-7.png" alt="" loading="lazy">
+                  </div>
+                  <div class="product-card__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+                  <a class="product-card__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <img src="img/products/item-8.png" alt="" loading="lazy">
+                  </div>
+                  <div class="product-card__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+                  <a class="product-card__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__img">
+                    <img src="img/products/item-9.png" alt="" loading="lazy">
+                  </div>
+                  <div class="product-card__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+                  <a class="product-card__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+                </div>
+              </div>
+              <div class="page-inner__bottom">
+                <button class="button-load-more page-inner__button-load-more">Показать еще</button>
+              </div>
+            </div>
+         </div>
+      </div>
+    </div>
+    <div class="catalog-popular">
+      <div class="container catalog-popular__container">
+        <h2 class="catalog-popular__head">Популярные товары</h2>
+        <div class="slick-popular slick-popular--light slider-no-init">
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-1.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-1.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-2.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-3.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-3.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-3.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-1.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-3.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-3.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-3.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-3.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-1.json">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Отзывы о нашей продукции BEGIN -->
+    <div class="reviews">
+  <div class="container reviews__container">
+    <h2 class="reviews__head">Отзывы о нашей продукции</h2>
+    <div class="slick-reviews slider-no-init">
+     <div class="slick-reviews__item">
+       <div class="review">
+         <div class="review__top">
+           <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+           <div class="review__shop review__shop--ozon">ozon</div>
+         </div>
+         <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+         <div class="review__descr">Отличное мыло, беру не первый раз, рекомендую</div>
+         <div class="review__bottom">
+           <div class="review__client-name">Алла К.</div>
+           <div class="review__date">11.01.2025</div>
+         </div>
+       </div>
+     </div>
+     <div class="slick-reviews__item">
+       <div class="review">
+         <div class="review__top">
+           <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+           <div class="review__shop review__shop--ozon">ozon</div>
+         </div>
+         <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+         <div class="review__descr">Отличное мыло, беру не первый раз, рекомендую</div>
+         <div class="review__bottom">
+           <div class="review__client-name">Алла К.</div>
+           <div class="review__date">11.01.2025</div>
+         </div>
+       </div>
+     </div>
+     <div class="slick-reviews__item">
+       <div class="review">
+         <div class="review__top">
+           <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+           <div class="review__shop review__shop--wb">WB</div>
+         </div>
+         <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+         <div class="review__descr">Отличное мыло, беру не первый раз, рекомендую</div>
+         <div class="review__bottom">
+           <div class="review__client-name">Алла К.</div>
+           <div class="review__date">11.01.2025</div>
+         </div>
+       </div>
+     </div>
+     <div class="slick-reviews__item">
+       <div class="review">
+         <div class="review__top">
+           <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+           <div class="review__shop review__shop--ozon">ozon</div>
+         </div>
+         <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+         <div class="review__descr">Отличное мыло, беру не первый раз, рекомендую</div>
+         <div class="review__bottom">
+           <div class="review__client-name">Алла К.</div>
+           <div class="review__date">11.01.2025</div>
+         </div>
+       </div>
+     </div>
+     <div class="slick-reviews__item">
+      <div class="review">
+        <div class="review__top">
+          <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+          <div class="review__shop review__shop--wb">WB</div>
+        </div>
+        <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+        <div class="review__descr">Отличное мыло, беру не первый раз, рекомендую</div>
+        <div class="review__bottom">
+          <div class="review__client-name">Алла К.</div>
+          <div class="review__date">11.01.2025</div>
+        </div>
+      </div>
+     </div>
+     <div class="slick-reviews__item">
+       <div class="review">
+         <div class="review__top">
+           <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+           <div class="review__shop review__shop--ozon">ozon</div>
+         </div>
+         <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+         <div class="review__descr">Отличное мыло, беру не первый раз, рекомендую</div>
+         <div class="review__bottom">
+           <div class="review__client-name">Алла К.</div>
+           <div class="review__date">11.01.2025</div>
+         </div>
+       </div>
+     </div>
+    </div>
+  </div>
+ </div>
+    <!-- Отзывы о нашей продукции END -->
+
+    <!-- Форма обратной связи BEGIN -->
+    <section class="feedback">
+  <div class="container feedback__container">
+    <div class="feedback__info">
+      <div class="feedback__title">СВЯЖИТЕСЬ С НАМИ</div>
+      <div class="feedback__descr">Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы</div>
+    </div>
+    <div class="feedback__right">
+      <form class="feedback-form" action="data/feedback.json" method="post">
+        <div class="feedback-form__field">
+          <input class="feedback-form__input" type="text" name="name" placeholder="Имя" data-required="true" autocomplete="off">
+        </div>
+        <div class="feedback-form__field">
+          <inpu class="feedback-form__input" type="text" name="phone" placeholder="Телефон" data-required="true" autocomplete="off">
+        </inpu></div>
+        <div class="feedback-form__field">
+          <input class="feedback-form__input" type="text" name="email" placeholder="E-mail" data-required="true" autocomplete="off">
+        </div>
+        <div class="feedback-form__field">
+          <textarea name="comment" placeholder="Вопрос или комментарий"></textarea>
+        </div>
+        <button class="feedback-form__submit button" type="submit">Отправить заявку</button>
+        <div class="feedback-form__field">
+          <label class="feedback-form__checkbox"> 
+            <input type="checkbox" data-type="check" name="policy" checked="checked" data-required="true">
+            <div class="feedback-form__checkbox-custom"></div>
+            <div class="feedback-form__checkbox-custom-text">Я согласен с <a href="#">условиями обработки персональных данных</a></div>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+    <!-- Форма обратной связи END -->
+
+    <!-- Контакты с yandex картой BEGIN -->
+    <div class="contacts">
+  <div class="container contacts__container">
+     <h2 class="contacts__head">Контакты</h2>
+     <div class="contacts__info">
+       <div class="contacts__info-title">Всегда на связи</div>
+       <div class="contacts__item contacts__item--phone"><a href="tel:88005504996">8 800 550 49 96</a> - бесплатный звонок по России</div>
+       <div class="contacts__item contacts__item--email">bh@kccc.ru</div>
+       <div class="contacts__item contacts__item--address">613048, Россия, Кировская область, <br>
+         г. Кирово-Чепецк, ул. Производственная <!--д.6--></div>
+     </div>
+   </div>
+   <div id="yandex-map" class="contacts__map"></div>
+ </div>
+    <!-- Контакты с yandex картой END -->
+
+    <!-- Подписка на рассылку BEGIN -->
+    <div class="subscribe">
+  <div class="container subscribe__container">
+    <h2 class="subscribe__head">Подпишитесь на рассылку</h2>
+    <div class="subscribe__descr">Получайте раз в неделю подборку новинок,акций, лайфхаков по уборке и персональных предложений от JOY HOME</div>
+    <div class="subscribe__form">
+    <form class="subscribe-form" action="data/subscribe.json">
+      <div class="subscribe-form__field">
+        <input class="subscribe-form__input" type="text" name="name" placeholder="Ваше имя" data-required="true" autocomplete="off">
+      </div>
+      <div class="subscribe-form__field">
+        <input class="feedback-form__input" type="text" name="email" placeholder="Электронная почта" data-required="true" autocomplete="off">
+      </div>
+      <div class="subscribe-form__bottom">
+        <button class="button subscribe-form__submit" type="submit">Отправить</button>
+        <div class="subscribe-form__policy">
+          Отправляя данную форму, вы соглашаетесь с <a href="policy">условиями обработки персональных данных</a>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+    <!-- Подписка на рассылку END -->
+
+    <!-- Подвал BEGIN -->    
+    <footer class="footer">
+  <div class="container footer__container">
+    <nav class="footer__menu menu-footer">
+      <ul class="menu-footer__list">
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="brands.html">О бренде</a>
+        </li>
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="products-new.html">Новинки</a>
+        </li>
+        <li class="menu-footer__item">
+          <a class="menu-footer__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer__brands">
+      <div class="footer__brands-title">Наши бренды:</div>
+      <img src="img/brands/item-1.svg" alt="" loading="lazy">
+      <img src="img/brands/item-2.svg" alt="" loading="lazy">
+    </div>
+    <div class="footer__address">
+      <div class="footer__address-place">
+        г. Кирово-Чепецк,<br> 
+        ул. Производственная, 6
+      </div>
+      <div class="footer__work-mode">Режим работы:<br>пн-пт с 8:00 до 17:00</div>
+    </div>
+    <div class="footer__contacts">
+      <a class="footer__phone" href="tel:88005504996">8 800 550 49 96</a>
+      <a class="footer__link-parthner" href="#modal-form-parthner" data-fancybox="">Стать партнером</a>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copyright">2025 (с) JOY HOME</span>
+      <a class="footer__link" href="#">Политика конфиденциальности</a>
+      <a class="footer__link" href="#">Оферта и реквизиты</a>
+    </div>
+  </div>
+</footer>
+    <!-- Подвал END -->
+  </main>
+  <!-- Модальные окна BEGIN -->
+  <div class="modal modal--product-new" id="modal-product-new">
+  <div class="modal-product-card modal-product-card--new">
+    <div class="modal-product-card__image">
+      <picture>
+        <source srcset="img/catalog-new/modal-img-mobile.jpg" media="(max-width: 767px)">
+        <img src="img/catalog-new/modal-img.jpg" alt="Жидкое мыло JOY HOME зеленый чай 500 мл" loading="lazy">
+      </picture>
+    </div>
+    <h3 class="modal-product-card__title">Мыло для рук JOY HOME зеленый чай</h3>
+    <div class="modal-product-card__text">
+      <div class="modal-product-card__descr">Жидкое мыло на каждый день для устранения различных
+        загрязнений. Эффективно очищает кожу лица, рук и тела.
+        Обладает гигиеническим свойством. Хорошо смывается
+        водой. Обладает приятным ароматом</div>
+      <div class="modal-product-card__info">
+        <span class="modal-product-card__volume">Объем: 500 мл</span>
+        <span class="modal-product-card__price">Цена: 180 р</span>
+      </div>
+      <div class="modal-product-card__links">
+        <span class="modal-product-card__links-label">Где купить:</span>
+        <a class="modal-product-card__shop-link" href="#">
+          <img src="img/ozon-link.png" alt="Озон">
+        </a>
+        <a class="modal-product-card__shop-link" href="#">
+          <img src="img/wildberries-link.png" alt="Вайлдберриз">
+        </a>
+      </div>
+    </div>
+    <!-- <button class="next-slide" type="button">Следующий слайд</button> -->
+  </div>
+</div>
+<div class="modal modal--form-parthner" id="modal-form-parthner">
+  <form action="data/feedback.json" class="modal-form-parthner">
+    <div class="modal-form-parthner__title">Заявка на партнерство</div>
+    <div class="modal-form-parthner__descr">Если вы хотите стать нашим партнером, заполните форму. Мы свяжемся с вами
+      в течение одного дня.</div>
+    <div class="modal-form-parthner__field">
+      <input class="modal-form-parthner__input" type="text" name="name" placeholder="Имя" data-required="true" autocomplete="off">
+    </div>
+    <div class="modal-form-parthner__field">
+      <input class="modal-form-parthner__input" type="text" name="phone" placeholder="Телефон" data-required="true" autocomplete="off">
+    </div>
+    <div class="modal-form-parthner__field">
+      <input class="modal-form-parthner__input" type="text" name="email" placeholder="E-mail" data-required="true" autocomplete="off">
+    </div>
+    <div class="modal-form-parthner__field">
+      <textarea name="comment" placeholder="Сообщение"></textarea>
+    </div>
+    <button class="modal-form-parthner__submit button" type="submit">Стать партнером</button>
+    <div class="modal-form-parthner__policy">
+      Отправляя данную форму, вы соглашаетесь с <a href="policy">условиями обработки персональных данных</a>
+    </div>
+  </form>
+</div>
+   <!-- Модальные окна END -->
+   
+  <link rel="preload" as="style" href="scripts/slick/slick.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="scripts/slick/slick-theme.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="scripts/fancybox/jquery.fancybox.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="scripts/nouislider/nouislider.css" onload="this.onload=null;this.rel='stylesheet'">
+
+  <script src="scripts/yandex-map/yandex-map.js"></script>
+  <script src="scripts/form-validation/form-validation.js"></script>
+
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/slick/slick.min.js"></script>
+  <script src="scripts/fancybox/jquery.fancybox.min.js"></script>
+  <script src="scripts/nouislider/nouislider.min.js"></script>
+
+  <script src="scripts/script.min.js"></script>
+</body>
+</html>

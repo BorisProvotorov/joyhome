@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+.menu-footer {
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  @media  screen and (max-width: $tablet-width-portret) {
+
+    &__item:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+  }
+}

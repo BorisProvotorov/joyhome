@@ -1,0 +1,67 @@
+@use "variables" as *;
+
+.review {
+  background-color: #EAEAEA;
+  border-radius: 25px;
+  padding: 25px 30px 27px 30px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__shop {
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  &__shop--ozon {
+    color: #2A62FF;
+  }
+
+  &__shop--wb {
+    color: #E50A7D;
+  }
+
+  &__bottom {
+    display: flex;
+    margin-top: auto;
+  }
+
+  &__date {
+    margin-left: auto;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+  }
+
+  &__descr {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  &__client-name {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__date {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+    & {
+      width: 360px;
+    }
+  }
+}

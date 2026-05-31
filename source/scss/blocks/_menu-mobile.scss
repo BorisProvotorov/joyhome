@@ -1,0 +1,68 @@
+@use "variables" as *;
+
+.menu-mobile {
+  display: none;
+
+  @media  screen and (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 82px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 0;
+    padding: 30px 60px 30px 60px;
+    opacity: 0;
+    transition: all .2s;
+    pointer-events: none;
+
+    &.active {
+      opacity: 1;
+      transition: all .2s;
+      z-index: 200;
+      pointer-events: all;
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 21px;
+    }
+  
+    &__link {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 17px;
+      text-decoration: none;
+      color: rgba(43, 42, 41, 1);
+    }
+
+    &__address {
+      font-family: 'Montserrat';
+      font-size: 12px;
+      text-align: center;
+      color: rgba(43, 42, 41, 1);
+      margin: auto auto 0 auto;
+      max-width: 285px;
+    }
+
+    &__phone {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    &__phone a {
+      font-family: 'Montserrat';
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      color: rgba(43, 42, 41, 1);
+    }
+  }
+}

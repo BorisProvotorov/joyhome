@@ -1,0 +1,41 @@
+@use "variables" as *;
+
+.button-load-more {
+  font-family: 'Stolzl';
+  font-size: 16px;
+  font-weight: 300;
+  padding: 13px 25px;
+  border-radius: 34px;
+  background-color: #00263a;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  max-width: 315px;
+  display: block;
+  border: none;
+
+  @media  screen and (max-width: $tablet-width) {
+    font-size: 12px;
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+    & {
+      font-weight: 300;
+      padding: 7px 32px;
+      border-radius: 34px;
+      background-color: transparent;
+      color: #003049;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      max-width: 100%;
+      display: block;
+      border: 1px solid #003049;
+    }
+  }
+
+}
+
+

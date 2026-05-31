@@ -1,0 +1,32 @@
+<section class="feedback">
+  <div class="container feedback__container">
+    <div class="feedback__info">
+      <div class="feedback__title">СВЯЖИТЕСЬ С НАМИ</div>
+      <div class="feedback__descr">Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы</div>
+    </div>
+    <div class="feedback__right">
+      <form class="feedback-form" action="data/feedback.json" method="post">
+        <div class="feedback-form__field">
+          <input class="feedback-form__input" type="text" name="name" placeholder="Имя" data-required="true" autocomplete="off">
+        </div>
+        <div class="feedback-form__field">
+          <inpu class="feedback-form__input"type="text" name="phone" placeholder="Телефон" data-required="true" autocomplete="off">
+        </div>
+        <div class="feedback-form__field">
+          <input class="feedback-form__input" type="text" name="email" placeholder="E-mail" data-required="true" autocomplete="off">
+        </div>
+        <div class="feedback-form__field">
+          <textarea name="comment" placeholder="Вопрос или комментарий"></textarea>
+        </div>
+        <button class="feedback-form__submit button" type="submit">Отправить заявку</button>
+        <div class="feedback-form__field">
+          <label class="feedback-form__checkbox"> 
+            <input type="checkbox" data-type="check" name="policy" checked="checked" data-required="true">
+            <div class="feedback-form__checkbox-custom"></div>
+            <div class="feedback-form__checkbox-custom-text">Я согласен с <a href="#">условиями обработки персональных данных</a></div>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

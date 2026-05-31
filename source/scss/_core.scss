@@ -32,6 +32,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -40,6 +48,7 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
@@ -49,9 +58,19 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2em;
+  min-height: 100%;
   color: #000000;
   font-style: normal;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .clearfix::after {
@@ -70,15 +89,32 @@ figure {
 }
 
 .container {
-    max-width: 1284px;
-    padding: 0 42px;
-    margin: 0 auto;
+  border-top: 1px solid transparent;
+  max-width: 1284px;
+  padding: 0 42px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h2, .h2 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-top: 62px;
+  margin-bottom: 44px;
 }
 
 @media (max-width: $tablet-width) {
   .container {
     width: 100%;
   }
+
+  h2, .h2 {
+    font-size: 24px;
+    line-height: 62px;
+    margin-top: 28px;
+    margin-bottom: 8px;
+  }  
 }
 
 @media (max-width: $mobile-width) {
@@ -87,4 +123,34 @@ figure {
     min-width: 320px;
     padding: 0 60px;
   }
+
+  h2, .h2 {
+    font-size: 22px;
+  }
+}
+
+input[type='text'],
+textarea {
+  border: none;
+  height: 44px;
+  width: 100%;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 16px;
+}
+
+input[type='text']:focus,
+input[type='text']:active,
+textarea:focus,
+textarea:active {
+  border: none;
+  outline: none;
+}
+
+.field-error {
+  color: #f26060;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 10px;
 }

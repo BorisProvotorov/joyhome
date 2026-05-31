@@ -1,0 +1,20 @@
+{
+  "title": "Мыло для рук JOY HOME зеленый чай 100",
+  "image": {
+    "desktop": "img/catalog-new/modal-img.jpg",
+    "mobile": "img/catalog-new/modal-img-mobile.jpg"
+  },
+  "descr": "Жидкое мыло на каждый день для устранения различных загрязнений. Эффективно очищает кожу лица, рук и тела. Обладает гигиеническим свойством. Хорошо смывается водой. Обладает приятным ароматом.",
+  "volume": "Объем: 1500 мл",
+  "price": "Цена: 1800 р",
+  "links": [
+    {
+      "url": "https://ozon.ru",
+      "image": "img/ozon-link.png"
+    },
+    {
+      "url": "https://wildberries.ru",
+      "image": "img/wildberries-link.png"
+    }
+  ]
+}

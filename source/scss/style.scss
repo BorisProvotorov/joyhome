@@ -3,9 +3,42 @@
 @use "_visually-hidden.scss";
 @use "_core.scss";
 
+@use "blocks/_button.scss";
+@use "blocks/_button-load-more.scss";
+@use "blocks/_burger.scss";
+@use "blocks/_modal.scss";
 @use "blocks/_header.scss";
 @use "blocks/_menu.scss";
 @use "blocks/_features.scss";
-@use "blocks/_catalog.scss";
+@use "blocks/_catalog-main.scss";
+@use "blocks/_catalog-popular.scss";
+@use "blocks/_product-popular.scss";
+@use "blocks/_slick-popular.scss";
+@use "blocks/_slick-products-new.scss";
+@use "blocks/_slick-reviews.scss";
+@use "blocks/_catalog-new.scss";
+@use "blocks/_products-new.scss";
+@use "blocks/_reviews.scss";
+@use "blocks/_review.scss";
+@use "blocks/_feedback.scss";
+@use "blocks/_feedback-form.scss";
+@use "blocks/_contacts.scss";
+@use "blocks/_footer.scss";
+@use "blocks/_menu-footer.scss";
+@use "blocks/_subscribe.scss";
+@use "blocks/_subscribe-form.scss";
+@use "blocks/_modal-form-parthner.scss";
+@use "blocks/_notify.scss";
+@use "blocks/_modal-product-card.scss";
+@use "blocks/_breadcrumb.scss";
+@use "blocks/_page-inner.scss";
+@use "blocks/_menu-tags.scss";
+@use "blocks/_product-card.scss";
+@use "blocks/_product-card-new.scss";
+@use "blocks/_filter.scss";
+@use "blocks/_results-in-numbers.scss";
+@use "blocks/_our-values.scss";
+@use "blocks/_out-products.scss";
+@use "blocks/_menu-mobile.scss";
 
 

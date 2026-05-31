@@ -1,0 +1,109 @@
+@use "variables" as *;
+
+.product-card-new {
+  position: relative;
+  display: grid;
+  grid-template-columns: 157px 1fr;
+  grid-template-rows: auto 1fr;
+  background-color: rgba(234, 234, 234, 1);
+  padding: 23px;
+  grid-gap: 0 23px;
+  border-radius: 25px;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    background-image: url("../img/arrow-product-new.svg");
+    width: 10px;
+    height: 10px;
+  }
+
+  &__img {
+    grid-row: 1 / 5;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 15px;
+  }
+
+  &__img img {
+    display: block;
+    margin: 0 auto;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 38, 58, 1);
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  &__descr {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: rgba(0, 38, 58, 1);
+  }
+
+  &__date {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: rgba(0, 38, 58, 1);
+    margin-bottom: 15px;
+  }
+
+  @media  screen and (max-width: $tablet-width) {
+
+    &::after {
+      right: 20px;
+      top: 20px;
+    }
+
+    &__descr {
+      font-size: 14px;
+    }
+
+    &__date {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+    & {
+      grid-template-columns: auto;
+      border-radius: 15px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &__img {
+      height: 145px;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 7px;
+      margin-top: 10px;
+    }
+
+    &__descr {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &__date {
+      margin-bottom: 0;
+      margin-top: 15px;
+    }
+  }
+}

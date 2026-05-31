@@ -1,92 +1,268 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-	<meta charset="UTF-8">
-	<title>Joy Home</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
+  <meta charset="UTF-8">
+  <title>Joy Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="img/hero-bg-mobile.jpg" as="image">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <img class="header__logo" src="img/logo.svg" alt="Логотип">
-        <nav class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">О бренде</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Каталог</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Новинки</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="header__link-phone" href="tel:88005504996">8 800 550 49 96</a>
-        <a class="header__btn-parthner" href="#modal-parthner">Стать партнером</a>
-      </div>
-    </div>
-    <div class="header__bottom">
-      <picture>
-        <source srcset="img/hero-photo-1024.png" media="(max-width: 1024px)">
-        <img class="header__hero-photo" src="img/hero-photo.png" fetchpriority="high">
-      </picture>
-      <div class="container">
-        <div class="header__offer">
-          <h1 class>Современный взгляд на уборку</h1>
-          <div class="header__offer-descr">JOY HOME - широкий выбор средств для уборки и стирки, которые реально работают, удобны и понятны в использовании, дарят ощущение свежести и уюта каждый день, для каждого дома, по цене, доступной каждому</div>
-          <a class="header__offer-btn" href="#catalog">Каталог</a>
-        </div>
-      </div>
-    </div>
-  </header>
+  <!-- Шапка BEGIN -->
+  <include src="components/header.html"></include>
+  <!-- Шапка END -->
   <main>
-    <div class="features">
+    <!-- Преимущества BEGIN -->
+    <section class="features">
       <div class="container">
         <h2 class="features__head">Почему мы?</h2>
         <div class="features__list">
           <div class="features__item">
-            <img class="features__icon" src="img/features/icon-1.svg" alt="">
+            <img class="features__icon" src="img/features/icon-1.svg" alt="" loading="lazy">
             <h3 class="features__title">Эффективность</h3>
             <div class="features__descr">Благодаря современным формулам бытовая химия JOY HOME справляется даже со сложными задачами</div>
           </div>
           <div class="features__item">
-            <img class="features__icon" src="img/features/icon-2.svg" alt="">
+            <img class="features__icon" src="img/features/icon-2.svg" alt="" loading="lazy">
             <h3 class="features__title">Выгодные цены</h3>
             <div class="features__descr">Предлагаем честную стоимость, без переплат и скрытых наценок</div>
           </div>
           <div class="features__item">
-            <img class="features__icon" src="img/features/icon-3.svg" alt="">
+            <img class="features__icon" src="img/features/icon-3.svg" alt="" loading="lazy">
             <h3 class="features__title">Удобство</h3>
             <div class="features__descr">Мы создаём продукты, которые легко и приятно использовать каждый день</div>
           </div>
           <div class="features__item">
-            <img class="features__icon" src="img/features/icon-4.svg" alt="">
+            <img class="features__icon" src="img/features/icon-4.svg" alt="" loading="lazy">
             <h3 class="features__title">Качество</h3>
             <div class="features__descr">Придерживаемся высоких стандартов и контроля качества на каждом этапе производства</div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="catalog">
-      <div class="container"></div>
-    </div>
+    </section>
+    <!-- Преимущества END -->
+
+    <!-- Каталог на главной BEGIN -->
+    <section class="catalog-main">
+      <div class="container">
+        
+        <h2 class="catalog-main__head">Каталог</h2>
+        <div class="catalog-main__list">
+          <a class="catalog-main__item" href="catalog.html">
+            <div class="catalog-main__title">Все товары</div>
+            <picture>
+              <source srcset="img/catalog-main/item-1-mobile.jpg" media="(max-width: 767px)">
+              <img src="img/catalog-main/item-1.jpg" alt="Все товары" class="catalog-main__img" loading="lazy">
+            </picture>
+          </a>
+          <a class="catalog-main__item" href="catalog.html">
+            <div class="catalog-main__title">Для кухни</div>
+            <picture>
+              <source srcset="img/catalog-main/item-2-mobile.jpg" media="(max-width: 767px)">
+              <img src="img/catalog-main/item-2.jpg" alt="Все товары" class="catalog-main__img" loading="lazy">
+            </picture>
+          </a>
+          <a class="catalog-main__item" href="catalog.html">
+            <div class="catalog-main__title">Для мытья посуды</div>
+            <picture>
+              <source srcset="img/catalog-main/item-3-mobile.jpg" media="(max-width: 767px)">
+              <img src="img/catalog-main/item-3.jpg" alt="Все товары" class="catalog-main__img" loading="lazy">
+            </picture>
+          </a>
+          <a class="catalog-main__item" href="catalog.html">
+            <div class="catalog-main__title">Для ванной</div>
+            <picture>
+              <source srcset="img/catalog-main/item-4-mobile.jpg" media="(max-width: 767px)">
+              <img src="img/catalog-main/item-4.jpg" alt="Все товары" class="catalog-main__img" loading="lazy">
+            </picture>
+          </a>
+          <a class="catalog-main__item" href="catalog.html">
+            <div class="catalog-main__title">Для стирки</div>
+            <picture>
+              <source srcset="img/catalog-main/item-5-mobile.jpg" media="(max-width: 767px)">
+              <img src="img/catalog-main/item-5.jpg" alt="Все товары" class="catalog-main__img" loading="lazy">
+            </picture>
+          </a>
+          <a class="catalog-main__item" href="catalog.html">
+            <div class="catalog-main__title">Для поверхностей</div>
+            <picture>
+              <source srcset="img/catalog-main/item-6-mobile.jpg" media="(max-width: 767px)">
+              <img src="img/catalog-main/item-6.jpg" alt="Все товары" class="catalog-main__img" loading="lazy">
+            </picture>
+          </a>
+          <a class="catalog-main__item" href="catalog.html">
+            <div class="catalog-main__title">Парфюмерно-косметическая продукция</div>
+            <picture>
+              <source srcset="img/catalog-main/item-7-mobile.jpg" media="(max-width: 767px)">
+              <img src="img/catalog-main/item-7.jpg" alt="Все товары" class="catalog-main__img" loading="lazy">
+            </picture>
+          </a>
+        </div>
+      </div>
+      <!-- Популярные товары BEGIN -->
+      <div class="container catalog-main__popular-container">
+        <h2 class="catalog-main__head">Популярные товары</h2>
+        <div class="slick-popular slider-no-init">
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-1.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-1.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-2.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-2.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-3.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-3.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-3.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-1.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-3.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-1.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-3.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-1.json">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slick-popular__item">
+            <div class="product-popular">
+              <div class="product-popular__img">
+                <img src="img/product-popular/item-3.png" alt="" loading="lazy">
+              </div>
+              <div class="product-popular__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
+              <a class="product-popular__button-more button" href="#modal-product-new" data-json-url="data/product-1.json">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Популярные товары END -->
+    </section>
+    <!-- Каталог на главной END -->
+
+    <!-- Новинки BEGIN -->
+    <section class="catalog-new">
+      <div class="container catalog-new__container">
+        <h2 class="catalog-new__head">Новинки</h2>
+        <a class="catalog-new__link-all-new" href="#">Смотреть всё</a>
+        <div class="slick-products-new slider-no-init">
+          <div class="slick-products-new__item">
+            <a class="products-new" href="#modal-product-new" data-json-url="data/product-1.json">
+              <div class="products-new__img">
+                <img src="img/products-new/inem-1.jpg" alt="" loading="lazy">
+              </div>
+              <div class="products-new__title">Гель для стирки с пятновыводителем JOY HOME POWER</div>
+              <div class="products-new__descr">Уникальный колпачок позволяет легко стирать пятна без вреда для ткани...</div> 
+            </a>
+          </div>
+          <div class="slick-products-new__item">
+            <a class="products-new" href="#modal-product-new" data-json-url="data/product-2.json">
+              <div class="products-new__img">
+                <img src="img/products-new/inem-2.jpg" alt="" loading="lazy">
+              </div>
+              <div class="products-new__title">Гель для стирки с пятновыводителем JOY HOME POWER</div>
+              <div class="products-new__descr">Уникальный колпачок позволяет легко стирать пятна без вреда для ткани...</div> 
+            </a>
+          </div>
+          <div class="slick-products-new__item">
+            <a class="products-new" href="#modal-product-new" data-json-url="data/product-3.json">
+              <div class="products-new__img">
+                <img src="img/products-new/inem-3.jpg" alt="" loading="lazy">
+              </div>
+              <div class="products-new__title">Гель для стирки с пятновыводителем JOY HOME POWER</div>
+              <div class="products-new__descr">Уникальный колпачок позволяет легко стирать пятна без вреда для ткани...</div> 
+            </a>
+          </div>
+          <div class="slick-products-new__item">
+            <a class="products-new" href="#modal-product-new" data-json-url="data/product-1.json">
+              <div class="products-new__img">
+                <img src="img/products-new/inem-4.jpg" alt="" loading="lazy">
+              </div>
+              <div class="products-new__title">Гель для стирки с пятновыводителем JOY HOME POWER</div>
+              <div class="products-new__descr">Уникальный колпачок позволяет легко стирать пятна без вреда для ткани...</div> 
+            </a>
+          </div>
+          <div class="slick-products-new__item">
+            <a class="products-new" href="#modal-product-new" data-json-url="data/product-2.json">
+              <div class="products-new__img">
+                <img src="img/products-new/inem-1.jpg" alt="" loading="lazy">
+              </div>
+              <div class="products-new__title">Гель для стирки с пятновыводителем JOY HOME POWER</div>
+              <div class="products-new__descr">Уникальный колпачок позволяет легко стирать пятна без вреда для ткани...</div> 
+            </a>
+          </div>
+        </div>
+        <button class="button-load-more catalog-new__button-load-more">Показать еще</button>
+      </div>
+    </section>
+    <!-- Новинки END -->
+
+    <!-- Отзывы о нашей продукции BEGIN -->
+    <include src="components/reviews.html"></include>
+    <!-- Отзывы о нашей продукции END -->
+
+    <!-- Форма обратной связи BEGIN -->
+    <include src="components/feedback.html"></include>
+    <!-- Форма обратной связи END -->
+
+    <!-- Контакты с yandex картой BEGIN -->
+    <include src="components/contacts.html"></include>
+    <!-- Контакты с yandex картой END -->
+
+    <!-- Подписка на рассылку BEGIN -->
+    <include src="components/subscribe.html"></include>
+    <!-- Подписка на рассылку END -->
+
+    <!-- Подвал BEGIN -->    
+    <include src="components/footer.html"></include>
+    <!-- Подвал END -->
   </main>
+  <!-- Модальные окна BEGIN -->
+  <include src="components/modal.html"></include>
+   <!-- Модальные окна END -->
   <link rel="preload" as="style" href="scripts/slick/slick.min.css" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" as="style" href="scripts/slick/slick-theme.css" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" as="style" href="scripts/fancybox/jquery.fancybox.min.css" onload="this.onload=null;this.rel='stylesheet'">
 
-	<script src="scripts/jquery-3.3.1.min.js"></script>
-	<script src="scripts/slick/slick.min.js"></script>
-	<script src="scripts/fancybox/jquery.fancybox.min.js"></script>
-	<script src="scripts/script.min.js"></script>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/slick/slick.min.js"></script>
+  <script src="scripts/fancybox/jquery.fancybox.min.js"></script>
+  <script src="scripts/yandex-map/yandex-map.min.js"></script>
+  <script src="scripts/form-validation/form-validation.min.js"></script>
+  
+  <script src="scripts/script.min.js"></script>
 </body>
-
 </html>

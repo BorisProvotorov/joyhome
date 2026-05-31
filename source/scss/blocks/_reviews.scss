@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+.reviews {
+  padding-bottom: 70px;
+
+  &__head {
+    margin-top: 0;
+    color: #00263A;
+  }
+
+  @media  screen and (max-width: $tablet-width) {
+    & {
+      padding-bottom: 50px;
+    }
+
+    &__container {
+      padding-right: 0;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+    &__container {
+      padding-left: 0;
+    }
+
+    &__head {
+      margin: 0 auto 27px auto;
+      line-height: 25px;
+      max-width: 234px;
+      text-align: center;
+    }
+  }
+}

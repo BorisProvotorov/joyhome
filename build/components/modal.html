@@ -1,0 +1,54 @@
+<div class="modal modal--product-new" id="modal-product-new">
+  <div class="modal-product-card modal-product-card--new">
+    <div class="modal-product-card__image">
+      <picture>
+        <source srcset="img/catalog-new/modal-img-mobile.jpg" media="(max-width: 767px)">
+        <img src="img/catalog-new/modal-img.jpg" alt="Жидкое мыло JOY HOME зеленый чай 500 мл" loading="lazy">
+      </picture>
+    </div>
+    <h3 class="modal-product-card__title">Мыло для рук JOY HOME зеленый чай</h3>
+    <div class="modal-product-card__text">
+      <div class="modal-product-card__descr">Жидкое мыло на каждый день для устранения различных
+        загрязнений. Эффективно очищает кожу лица, рук и тела.
+        Обладает гигиеническим свойством. Хорошо смывается
+        водой. Обладает приятным ароматом</div>
+      <div class="modal-product-card__info">
+        <span class="modal-product-card__volume">Объем: 500 мл</span>
+        <span class="modal-product-card__price">Цена: 180 р</span>
+      </div>
+      <div class="modal-product-card__links">
+        <span class="modal-product-card__links-label">Где купить:</span>
+        <a class="modal-product-card__shop-link" href="#">
+          <img src="img/ozon-link.png" alt="Озон">
+        </a>
+        <a class="modal-product-card__shop-link" href="#">
+          <img src="img/wildberries-link.png" alt="Вайлдберриз">
+        </a>
+      </div>
+    </div>
+    <!-- <button class="next-slide" type="button">Следующий слайд</button> -->
+  </div>
+</div>
+<div class="modal modal--form-parthner" id="modal-form-parthner">
+  <form action="data/feedback.json" class="modal-form-parthner">
+    <div class="modal-form-parthner__title">Заявка на партнерство</div>
+    <div class="modal-form-parthner__descr">Если вы хотите стать нашим партнером, заполните форму. Мы свяжемся с вами
+      в течение одного дня.</div>
+    <div class="modal-form-parthner__field">
+      <input class="modal-form-parthner__input" type="text" name="name" placeholder="Имя" data-required="true" autocomplete="off">
+    </div>
+    <div class="modal-form-parthner__field">
+      <input class="modal-form-parthner__input" type="text" name="phone" placeholder="Телефон" data-required="true" autocomplete="off">
+    </div>
+    <div class="modal-form-parthner__field">
+      <input class="modal-form-parthner__input" type="text" name="email" placeholder="E-mail" data-required="true" autocomplete="off">
+    </div>
+    <div class="modal-form-parthner__field">
+      <textarea name="comment" placeholder="Сообщение"></textarea>
+    </div>
+    <button class="modal-form-parthner__submit button" type="submit">Стать партнером</button>
+    <div class="modal-form-parthner__policy">
+      Отправляя данную форму, вы соглашаетесь с <a href="policy">условиями обработки персональных данных</a>
+    </div>
+  </form>
+</div>

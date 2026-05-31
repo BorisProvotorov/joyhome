@@ -1,0 +1,172 @@
+@use "variables" as *;
+
+.footer {
+  background-color: rgba(1, 37, 71, 1);
+  padding-top: 70px;
+  min-height: 333px;
+  margin-top: auto;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  &__brands {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    max-width: 205px;
+  }
+
+  &__brands img:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__brands-title {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(242, 242, 242, 1);
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  &__address-place {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(242, 242, 242, 1);
+    margin-bottom: 24px;
+  }
+
+  &__work-mode {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: rgba(242, 242, 242, 1);
+  }
+
+  &__contacts {
+    text-align: center;
+    max-width: 150px;
+  }
+
+  &__contacts > a {
+    font-family: 'Montserrat';
+    display: inline-block;
+    color: rgba(242, 242, 242, 1);
+  }
+
+  &__phone {
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  &__link-parthner {
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 780px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 12px;
+  }
+
+  &__copyright {
+    color: rgba(242, 242, 242, 1);
+  }
+
+  &__link {
+    color: rgba(242, 242, 242, 1);
+    text-decoration: none;
+  }
+
+  @media  screen and (max-width: $tablet-width-portret) {
+
+    & {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    &__container {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 116px 1fr;
+    }
+
+    &__menu {
+      grid-row: 2 span;
+    }
+
+    &__brands {
+      text-align: center;
+      grid-column: 2/3;
+      margin-left: auto;
+    }
+
+    &__brands-title {
+      font-size: 12px;
+    }
+
+    &__address {
+      grid-column: 2/3;
+      margin-top: 32px;
+      margin-left: auto;
+      margin-bottom: 5px;
+      text-align: right;
+    }
+
+    &__address-place {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &__contacts {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      max-width: none;
+      grid-column: 2/3;
+      grid-row: 2/3;
+      margin-left: auto;
+    }
+
+    &__phone {
+      font-size: 12px;
+      margin-right: 24px;
+    }
+
+    &__link-parthner {
+      font-size: 12px;
+      text-decoration: none;
+      border: 1px solid;
+      max-width: 90px;
+      text-align: center;
+      border-radius: 30px;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      text-align: left;
+      grid-column: 1/2;
+      grid-row: 3/4;
+      margin-top: 35px;
+      width: 140px;
+    }
+
+    &__bottom &__copyright {
+      margin-bottom: 16px;
+    }
+
+    &__bottom &__link:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}

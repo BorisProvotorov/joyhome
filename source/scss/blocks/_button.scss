@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+.button {
+  font-size: 16px;
+  font-family: 'Stolzl';
+  font-weight: 300;
+  padding: 13px 25px;
+  border-radius: 34px;
+  background-color: #00263a;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  max-width: 315px;
+  display: block;
+  border: none;
+  transition: all .2s;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  @media  screen and (max-width: $tablet-width) {
+    font-size: 12px;
+  }
+}

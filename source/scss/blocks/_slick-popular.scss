@@ -1,0 +1,83 @@
+@use "variables" as *;
+
+.slick-popular {
+  margin: 0 -15px;
+}
+
+.slick-popular.slider-no-init {
+  display: flex;
+  opacity: 0;
+}
+
+.slick-popular.slider-no-init.slick-initialized {
+  display: block;
+  opacity: 1;
+}
+
+.slick-popular.slider-no-init.slick-initialized .slick-popular__item {
+  min-width: auto;
+}
+
+.slick-popular.slider-no-init .slick-popular__item {
+  min-width: 378px;
+}
+
+.slick-popular__item {
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.slick-popular .slick-prev,
+.slick-popular .slick-next,
+.slick-popular .slick-prev:hover, 
+.slick-popular .slick-prev:focus, 
+.slick-popular .slick-next:hover, 
+.slick-popular .slick-next:focus {
+  background-image: url("../img/slide-arrow.svg");
+  width: 16px;
+  height: 29px;
+}
+
+.slick-popular .slick-prev {
+  transform: rotate(180deg);
+}
+
+.slick-popular .slick-next::after,
+.slick-popular .slick-next::before,
+.slick-popular .slick-prev::after,
+.slick-popular .slick-prev::before {
+  content: '';
+}
+
+.slick-popular--light .slick-prev,
+.slick-popular--light .slick-next,
+.slick-popular--light .slick-prev:hover, 
+.slick-popular--light .slick-prev:focus, 
+.slick-popular--light .slick-next:hover, 
+.slick-popular--light .slick-next:focus {
+  background-image: url("../img/slide-dark-arrow.svg");
+}
+
+.slick-popular--light .product-popular {
+  background-color: rgba(234, 234, 234, 1);
+}
+
+@media  screen and (max-width: $tablet-width) {
+  .slick-popular {
+    margin: 0 -12px;
+  }
+  
+  .slick-popular__item {
+    padding: 0 12px;
+  }
+}
+
+@media  screen and (max-width: $mobile-width) {
+  .slick-popular {
+    margin: 0 -10px;
+  }
+  
+  .slick-popular__item {
+    padding: 0 10px;
+  }
+}

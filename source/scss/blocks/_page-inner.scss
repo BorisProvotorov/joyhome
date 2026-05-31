@@ -1,0 +1,276 @@
+@use "variables" as *;
+
+.page-inner {
+  padding-top: 70px;
+
+  &__head {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 36px;
+    color: rgba(1, 37, 71, 1);
+    margin-top: 40px;
+    margin-bottom: 45px;
+  }
+
+  &__subhead {
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 22px;
+    color: rgba(1, 37, 71, 1);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 246px auto;
+    grid-gap: 0 50px;
+  }
+
+  &__descr {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 30px;
+    color: rgba(0, 38, 58, 1);
+  }
+
+  &__grid-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+  }
+
+  &__button-load-more {
+    margin: 70px auto 0;
+  }
+
+  &__products-new-grid {
+    padding-bottom: 70px;
+  }
+
+  &__products-new-list {
+    display: grid;
+    grid-gap: 30px;
+  }
+
+  &__head--text-content {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  &__text-content {
+    padding-bottom: 70px;
+
+    p {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 22px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      font-weight: 400;
+    }
+
+    > h2 {
+      font-size: 32px;
+      line-height: 24px;
+      color: rgba(1, 37, 71, 1);
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 15px;
+    }
+
+    ul, ol {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      padding-left: 0;
+      list-style-position: inside;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      position: relative;
+    }
+
+    > ul li::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: #012547;
+      display: inline-block;
+      margin-right: 7px;
+      vertical-align: middle;
+    }
+
+    //Маркеры списка 10x10 — 10, 7x7 — 8, 5x5 — 8, цвет rgba(1, 37, 71, 1)
+  }
+  
+  @media  screen and (max-width: $tablet-width) {
+    & {
+      padding-top: 40px;
+    }
+
+    &__head {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__subhead {
+      margin-bottom: 8px;
+    }
+
+    &__grid {
+      grid-template-columns: 230px auto;
+      grid-gap: 0 37px;
+    }
+
+    &__descr {
+      font-size: 15px;
+      line-height: 23px;
+    }
+
+    &__grid-products {
+      grid-gap: 24px;
+    }
+
+    &__products-new-grid {
+      padding-bottom: 50px;
+    }
+
+    &__products-new-grid &__button-load-more {
+      max-width: 315px;
+    }
+
+    &__products-new-list {
+      grid-gap: 20px;
+    }
+
+
+    &__button-load-more {
+      max-width: 236px;
+      margin: 50px auto 0;
+    }
+
+    &__text-content {
+      padding-bottom: 50px;
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      > h2 {
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      ul, ol {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      > ul li::before {
+        width: 7px;
+        height: 7px;
+      }
+    }
+  }
+
+  @media  screen and (max-width: $tablet-width-portret) {
+    &__grid-products {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+
+    & {
+      padding-top: 22px;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__head {
+      font-size: 22px;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    &__subhead {
+      font-size: 20px;
+      line-height: 26px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    &__descr {
+      font-size: 13px;
+      line-height: 19px;
+    }
+
+    &__grid-products {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+
+    &__button-load-more {
+      max-width: 100%;
+      margin-top: 30px;
+    }
+
+    &__products-new-grid {
+      padding-bottom: 30px;
+    }
+
+    &__products-new-grid &__button-load-more {
+      max-width: 100%;
+    }
+
+    &__text-content {
+      padding-bottom: 30px;
+
+      p {
+        font-size: 12px;
+        line-height: 19px;
+      }
+
+      > h2 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+
+      ul, ol {
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+      ul:not(:last-child),
+      ol:not(:last-child) {
+        margin-bottom: 28px;
+      }
+    }
+  }
+}

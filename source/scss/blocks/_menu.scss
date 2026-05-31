@@ -31,4 +31,10 @@
       margin: 5px 0;
     }
   }
+
+  @media  screen and (max-width: $mobile-width) {
+    & {
+      display: none;
+    }
+  }
 }

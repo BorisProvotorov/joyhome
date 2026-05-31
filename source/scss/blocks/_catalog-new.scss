@@ -1,0 +1,63 @@
+@use "variables" as *;
+
+.catalog-new {
+  padding-bottom: 70px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__head {
+    color: rgba(1, 37, 71, 1);
+  }
+
+  &__button-load-more {
+    display: none;
+  }
+
+  &__link-all-new {
+    position: absolute;
+    top: 75px;
+    right: 42px;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(1, 37, 71, 1);
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-all-new.svg");
+    background-position: right;
+    padding-right: 15px;
+  }
+
+  @media  screen and (max-width: $tablet-width) {
+    padding-bottom: 36px;
+
+    &__link-all-new {
+      top: 50px;
+    }
+  }
+
+  @media  screen and (max-width: $tablet-width-portret) {
+    &__container {
+      padding-right: 0;
+    }
+
+    &__link-all-new {
+      display: none;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-width) {
+    & {
+      padding-bottom: 30px;
+    }
+
+    &__container {
+      padding-right: 60px;
+    }
+
+    &__button-load-more {
+      display: block;
+      margin-top: 40px;
+    }
+  }
+} 
