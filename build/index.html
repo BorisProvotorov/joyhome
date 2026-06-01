@@ -28,7 +28,7 @@
             <a class="menu__link" href="products-new.html">Новинки</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
+            <a class="menu__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -84,7 +84,7 @@
             <a class="menu-mobile__link" href="catalog.html">Для удаления засоров</a>
           </li>
           <li class="menu-mobile__item">
-            <a class="menu-mobile__link" href="catalog.html">Контакты</a>
+            <a class="menu-mobile__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
         <div class="menu-mobile__address">
@@ -325,7 +325,9 @@
      <div class="slick-reviews__item">
        <div class="review">
          <div class="review__top">
-           <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+          <div class="rating">
+            <div class="rating__stars" style="width: 85%;"></div>
+          </div>
            <div class="review__shop review__shop--ozon">ozon</div>
          </div>
          <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
@@ -339,7 +341,9 @@
      <div class="slick-reviews__item">
        <div class="review">
          <div class="review__top">
-           <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+          <div class="rating">
+            <div class="rating__stars" style="width: 75%;"></div>
+          </div>
            <div class="review__shop review__shop--ozon">ozon</div>
          </div>
          <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
@@ -353,7 +357,9 @@
      <div class="slick-reviews__item">
        <div class="review">
          <div class="review__top">
-           <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+          <div class="rating">
+            <div class="rating__stars" style="width: 95%;"></div>
+          </div>
            <div class="review__shop review__shop--wb">WB</div>
          </div>
          <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
@@ -367,7 +373,9 @@
      <div class="slick-reviews__item">
        <div class="review">
          <div class="review__top">
-           <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+          <div class="rating">
+            <div class="rating__stars" style="width: 85%;"></div>
+          </div>
            <div class="review__shop review__shop--ozon">ozon</div>
          </div>
          <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
@@ -381,7 +389,9 @@
      <div class="slick-reviews__item">
       <div class="review">
         <div class="review__top">
-          <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+          <div class="rating">
+            <div class="rating__stars" style="width: 75%;"></div>
+          </div>
           <div class="review__shop review__shop--wb">WB</div>
         </div>
         <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
@@ -395,7 +405,9 @@
      <div class="slick-reviews__item">
        <div class="review">
          <div class="review__top">
-           <img src="img/stars.svg" alt="Рейтинг" loading="lazy">
+          <div class="rating">
+            <div class="rating__stars" style="width: 95%;"></div>
+          </div>
            <div class="review__shop review__shop--ozon">ozon</div>
          </div>
          <div class="review__title">Мыло для рук JOY HOME зеленый чай 500 мл</div>
@@ -418,14 +430,25 @@
       <div class="feedback__title">СВЯЖИТЕСЬ С НАМИ</div>
       <div class="feedback__descr">Оформите заявку на сайте, мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы</div>
     </div>
+    <div class="feedback__social">
+      <a class="feedback__social-link" href="#">
+        <img src="img/icon-social-tg.svg" alt="">
+      </a>
+      <a class="feedback__social-link" href="#">
+        <img src="img/icon-social-ws.svg" alt="">
+      </a>
+      <a class="feedback__social-link" href="#">
+        <img src="img/icon-social-mail.svg" alt="">
+      </a>
+    </div>
     <div class="feedback__right">
       <form class="feedback-form" action="data/feedback.json" method="post">
         <div class="feedback-form__field">
           <input class="feedback-form__input" type="text" name="name" placeholder="Имя" data-required="true" autocomplete="off">
         </div>
         <div class="feedback-form__field">
-          <inpu class="feedback-form__input" type="text" name="phone" placeholder="Телефон" data-required="true" autocomplete="off">
-        </inpu></div>
+          <input class="feedback-form__input" type="text" name="phone" placeholder="Телефон" data-required="true" autocomplete="off">
+        </div>
         <div class="feedback-form__field">
           <input class="feedback-form__input" type="text" name="email" placeholder="E-mail" data-required="true" autocomplete="off">
         </div>
@@ -502,7 +525,7 @@
           <a class="menu-footer__link" href="products-new.html">Новинки</a>
         </li>
         <li class="menu-footer__item">
-          <a class="menu-footer__link" href="#">Контакты</a>
+          <a class="menu-footer__link" href="contacts.html">Контакты</a>
         </li>
       </ul>
     </nav>

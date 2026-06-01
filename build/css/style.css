@@ -526,6 +526,10 @@ textarea:active {
   .header__link-phone {
     display: none;
   }
+  .header__btn-parthner {
+    padding: 7px;
+    max-width: none;
+  }
   .header__offer-btn {
     max-width: 125px;
   }
@@ -1277,13 +1281,17 @@ textarea:active {
   border-radius: 50px;
 }
 .feedback__container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 .feedback__info {
   max-width: 424px;
   margin-right: auto;
-  margin-top: -10px;
+  margin-top: -8px;
   padding-right: 40px;
+  grid-row: 3 span;
+  grid-column: 1/2;
+  margin-bottom: 80px;
 }
 .feedback__title {
   color: rgb(255, 245, 240);
@@ -1301,16 +1309,29 @@ textarea:active {
 }
 .feedback__right {
   max-width: 407px;
-  flex-grow: 1;
   margin-right: 70px;
+  grid-row: 1/5;
+  grid-column: 2/3;
+}
+.feedback__social-link {
+  display: inline-block;
+}
+.feedback__social-link:not(:first-child) {
+  margin-left: 17px;
 }
 @media screen and (max-width: 1024px) {
   .feedback {
     min-height: 430px;
+    padding-top: 66px;
+  }
+  .feedback__container {
+    padding-left: 56px;
   }
   .feedback__title {
     font-size: 36px;
     line-height: 45px;
+    max-width: 270px;
+    margin-bottom: 15px;
   }
   .feedback__descr {
     font-size: 14px;
@@ -1328,9 +1349,10 @@ textarea:active {
   .feedback {
     border-radius: 30px;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
   .feedback__container {
+    display: flex;
     flex-direction: column;
   }
   .feedback__title {
@@ -1349,6 +1371,13 @@ textarea:active {
   .feedback__right {
     max-width: 100%;
     margin-right: 0;
+  }
+  .feedback__social {
+    order: 1;
+    text-align: center;
+  }
+  .feedback__social-link {
+    max-width: 25px;
   }
 }
 
@@ -1479,6 +1508,7 @@ textarea:active {
     height: 40px;
   }
   .feedback-form__submit {
+    font-size: 12px;
     line-height: 20px;
     padding: 9px 32px;
   }
@@ -3158,4 +3188,15 @@ textarea:active {
     text-decoration: none;
     color: rgb(43, 42, 41);
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.rating {
+  background-image: url("../img/stars-gray.svg");
+  width: 70px;
+  height: 11px;
+}
+.rating__stars {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/stars.svg");
+}
