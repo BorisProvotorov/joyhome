@@ -96,6 +96,7 @@
     &__container {
       display: flex;
       flex-direction: column;
+      padding-left: 60px;
     }
 
     &__title {
@@ -125,6 +126,12 @@
 
     &__social-link {
       max-width: 25px;
+    }
+  }
+
+  @media  screen and (max-width: $mobile-very-small) {
+    &__container {
+      padding-left: 20px;
     }
   }
 }
